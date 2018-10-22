@@ -1,7 +1,8 @@
 #!/bin/sh
 #
 # Script based on https://forums.adobe.com/message/4727551
-
+apt-get update
+apt-get -y install joe lsof
 /tmp/ColdFusion_10_WWEJ_linux64.bin -f installer.profile
 
 # Disable admin security
@@ -11,7 +12,7 @@
 /opt/coldfusion10/cfusion/bin/coldfusion start; sleep 15
 
 # Simulate a browser request on the admin UI to complete installation
-wget --O /dev/null http://localhost:8500/CFIDE/administrator/index.cfm?configServer=true
+curl  "http://localhost:8500/CFIDE/administrator/index.cfm?configServer=true"
 
 # Stop the CF server instance
 /opt/coldfusion10/cfusion/bin/coldfusion stop
