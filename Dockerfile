@@ -18,4 +18,4 @@ RUN chmod 755 /tmp/install-cf10.sh
 RUN sudo /tmp/install-cf10.sh
 RUN rm /tmp/*.bin
 RUN rm /tmp/*.sh
-RUN rm /tmp/*.jar && wget -O- https://raw.github.com/ajenti/ajenti/1.x/scripts/install-ubuntu.sh | sudo sh
+#RUN rm /tmp/*.jar && wget -O- https://raw.github.com/ajenti/ajenti/1.x/scripts/install-ubuntu.sh | sudo sh
