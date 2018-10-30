@@ -12,6 +12,7 @@ RUN apt-get install -y wget unzip xsltproc apache2 default-jre joe lsof sudo && 
 ADD ./build/install/ /tmp/
 ADD ./build/service/ /etc/service/
 ADD ./build/my_init.d/ /etc/my_init.d/
+ADD cf10-linux64.tar.gz /tmp/
 
 RUN chmod -R 755 /etc/service/coldfusion10
 RUN chmod 755 /tmp/install-cf10.sh
