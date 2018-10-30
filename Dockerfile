@@ -13,6 +13,7 @@ ADD ./build/install/ /tmp/
 ADD ./build/service/ /etc/service/
 ADD ./build/my_init.d/ /etc/my_init.d/
 ADD cf10-linux64.tar.gz /tmp/
+ADD neo-runtime.xml /tmp/config
 
 RUN chmod -R 755 /etc/service/coldfusion10
 RUN chmod 755 /tmp/install-cf10.sh
