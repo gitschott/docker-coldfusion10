@@ -12,7 +12,7 @@ RUN apt-get install -y wget unzip xsltproc apache2 default-jre joe lsof sudo lib
 ADD ./build/install/ /tmp/
 ADD ./build/service/ /etc/service/
 ADD ./build/my_init.d/ /etc/my_init.d/
-ADD cf10-linux64.tar.gz /tmp/
+#ADD cf10-linux64.tar.gz /tmp/
 #ADD neo-runtime.xml /tmp/config
 #ADD configuration.cfm /tmp/config
 
