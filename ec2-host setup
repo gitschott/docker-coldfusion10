@@ -13,4 +13,6 @@ cd docker-coldfusion10ct
 ./prepare.sh && docker build -t cf10 . && \
 docker run -d -p 8083:8083 -p 80:80 -p 443 -p 8500:8500 -p 8080:8080 -p 8000:8000 -v /var/www:/var/www cf10
 
+grep -i 172 /opt/coldfusion10/cfusion/lib/neo-datasource.*
+
 sshfs jschott@172.31.225.78:/ /Users/jschott/mnt/sshfs/dockerhost
