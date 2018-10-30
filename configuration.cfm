@@ -27,14 +27,14 @@
         extensions.setCustomTagPath("/path/to/my_app/customtags");
 
         // Datasource
-        datasource.setOracle(
-                name = "local_orcl",
-                host = "localhost",
-                sid = "ORCL",
-                port = "1521",
-                username = "SCOTT",
-                password = "TIGER",
-                description = "Local oracle instance",
+        datasource.setMSSQL(
+                name = "laughstub",
+                host = "172.31.228.212",
+                database = "laughstub",
+                port = "1433",
+                username = "lincf",
+                password = "burnlast",
+                encryptpassword = "false",
                 disable_clob = false,
                 disable_blob = false
         );
