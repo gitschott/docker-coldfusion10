@@ -2,7 +2,6 @@
 #
 # Script based on https://forums.adobe.com/message/4727551
 apt-get update
-apt-get -y install joe lsof libxml2-utils
 /tmp/ColdFusion_10_WWEJ_linux64.bin -f installer.profile
 
 # Disable admin security
