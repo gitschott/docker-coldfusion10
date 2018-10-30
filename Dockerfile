@@ -22,3 +22,8 @@ RUN sudo /tmp/install-cf10.sh
 RUN rm /tmp/*.bin
 RUN rm /tmp/*.sh
 RUN rm /tmp/*.jar
+RUN cd /usr/local/bin && \
+wget -O virtualhost https://raw.githubusercontent.com/RoverWire/virtualhost/master/virtualhost.sh && \
+chmod +x virtualhost && \
+wget -O virtualhost-nginx https://raw.githubusercontent.com/RoverWire/virtualhost/master/virtualhost-nginx.sh && \
+chmod +x virtualhost-nginx
