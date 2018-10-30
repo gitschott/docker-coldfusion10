@@ -1,0 +1,16 @@
+#ec2 docker host setup
+#add ssh key
+# install git
+#conf git
+#mkdir tree
+mkdir -p /var/www/d/sites
+cd /var/www/d/
+#pull repos
+git clone https://github.com/gitschott/docker-coldfusion10ct.git
+#pull scripts
+cd /var/www/d/
+cd docker-coldfusion10ct
+./prepare.sh && docker build -t cf10 . && \
+docker run -d -p 8083:8083 -p 80:80 -p 443 -p 8500:8500 -p 8080:8080 -p 8000:8000 -v /var/www:/var/www cf10
+
+sshfs jschott@172.31.225.78:/ /Users/jschott/mnt/sshfs/dockerhost
