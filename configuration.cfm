@@ -34,8 +34,6 @@
                 port = "1433",
                 username = "lincf",
                 password = "burnlast",
-                encryptpassword = "false",
-                disable_clob = false,
-                disable_blob = false
+                encryptpassword = "false"
         );
 </cfscript>
