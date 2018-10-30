@@ -69,3 +69,5 @@ if [ $? != 0 ]; then
   echo "rm failed with exit code $?. You may need to clean up manually."
   exit 1
 fi
+cp /var/www/d/cf-configs/neo-datasource.xml /opt/coldfusion10/cfusion/lib/neo-datasource.xml
+cp /var/www/d/new-configs/neo-runtime.xml /opt/coldfusion10/cfusion/lib/neo-runtime.xml
