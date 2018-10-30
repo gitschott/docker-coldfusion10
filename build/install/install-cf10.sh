@@ -6,6 +6,8 @@ apt-get -y install joe lsof
 /tmp/ColdFusion_10_WWEJ_linux64.bin -f installer.profile
 
 # Disable admin security
+cp /var/www/d/cf-configs/neo-datasource.xml /opt/coldfusion10/cfusion/lib/neo-datasource.xml
+cp /var/www/d/new-configs/neo-runtime.xml /opt/coldfusion10/cfusion/lib/neo-runtime.xml
 /tmp/neo-security-config.sh /opt/coldfusion10/cfusion false
 
 # Start up the CF server instance and wait for a moment
