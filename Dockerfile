@@ -1,4 +1,4 @@
-FROM phusion/baseimage:latest
+FROM phusion/baseimage:0.9.9
 MAINTAINER finalcut bill@rawlinson.us
 EXPOSE 80 8500 8083 8080 8880 3305 3306
 VOLUME ["/var/www", "/tmp/config"]
