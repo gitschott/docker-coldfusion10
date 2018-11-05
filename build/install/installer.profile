@@ -1,7 +1,7 @@
 INSTALLER_UI=SILENT
-SILENT_LICENSE_MODE=developer
+SILENT_LICENSE_MODE=full
 # provide serial number if SILENT_LICENSE_MODE=full
-#SILENT_SERIAL_NUMBER=serial_number
+SILENT_SERIAL_NUMBER=1185-5007-1873-2710-4775-5473
 
 SILENT_INSTALL_ODBC=true
 #i cant imagine a scenario where I need the samples
