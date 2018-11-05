@@ -1,7 +1,7 @@
 FROM phusion/baseimage:0.9.9
 MAINTAINER finalcut bill@rawlinson.us
 EXPOSE 80 8500 8083 8080 8880 3305 3306
-VOLUME ["/var/www", "/tmp/config"]
+VOLUME ["/var/www", "/var/www"]
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV REFRESHED_AT 2014_08_21_1
